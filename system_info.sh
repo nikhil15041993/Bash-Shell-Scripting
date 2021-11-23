@@ -1,3 +1,8 @@
+#------------------------------------------------------------#
+# THIS SHELL SCRIPT DISPLAY THE RUNNING SERVICE AND MEMORY / DISK USAGES
+#-------------------------------------------------------------#
+
+
 #!/bin/bash
 
 mem=$(free | awk '/Mem/{printf("%.2f%"), $3/$2*100}')
