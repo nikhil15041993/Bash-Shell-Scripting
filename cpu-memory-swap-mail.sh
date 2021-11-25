@@ -26,5 +26,5 @@ sswap=$(free|awk '/Swap/{printf("%.2f%"), $3/$2*100}')
 echo "$scpu         $smem          $sswap" >> /tmp/cpu-mem-swap.txt
 echo "-------------------------------------------" >> /tmp/cpu-mem-swap.txt
 file=/tmp/cpu-mem-swap.txt
-echo "CPU and Memory Report for `date +"%B %Y"`" | mailx -s "CPU and Memory Report on `date`"  nikhilsnambiars@gmail.com < /tmp/cpu-mem-swap.txt
+echo "CPU and Memory Report for `date +"%B %Y"`" | mailx -s "CPU and Memory Report on `date`"  test@domain.com < /tmp/cpu-mem-swap.txt
 rm /tmp/cpu-mem-swap.txt
