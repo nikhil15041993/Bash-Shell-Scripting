@@ -1,3 +1,8 @@
+######################################################################
+# A Shell Script to Send Email Alert When Memory Gets Low            #
+######################################################################
+
+
 #!/bin/bash
 if which mailx > /dev/null
 then
